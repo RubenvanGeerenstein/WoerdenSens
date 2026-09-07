@@ -540,6 +540,42 @@
 
     .btn-submit:hover { background: var(--clay-light); }
 
+    /* ── PARTNERS ── */
+    .partners {
+      background: var(--warm-white);
+      padding-top: 2rem;
+      padding-bottom: 4rem;
+    }
+
+    .partners-logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 3rem;
+      margin-top: 1.5rem;
+    }
+
+    .partners-logos img {
+      height: 60px;
+      width: auto;
+      max-width: 180px;
+      object-fit: contain;
+      filter: grayscale(1);
+      opacity: 0.7;
+      transition: filter 0.2s, opacity 0.2s;
+    }
+
+    .partners-logos img:hover {
+      filter: grayscale(0);
+      opacity: 1;
+    }
+
+    @media (max-width: 768px) {
+      .partners-logos { gap: 2rem; }
+      .partners-logos img { height: 44px; }
+    }
+
     /* ── FOOTER ── */
     footer {
       background: var(--charcoal);
@@ -805,6 +841,16 @@
           ✓ Bericht verstuurd! Ik neem zo snel mogelijk contact met je op (meestal binnen 24h).
         </p>
       </form>
+    </div>
+  </section>
+
+  <!-- ── PARTNERS ── -->
+  <section class="partners" id="partners">
+    <p class="section-label" style="text-align:center;">Aangesloten bij</p>
+    <div class="partners-logos">
+      <img src="logo-rbcz.png" alt="RBCZ - Register Beroepsbeoefenaren Complementaire Zorg" />
+      <img src="logo-scag.jpg" alt="S.C.A.G." />
+      <img src="logo-shiatsu-vereniging.jpg" alt="Shiatsu Vereniging Nederland" />
     </div>
   </section>
 
